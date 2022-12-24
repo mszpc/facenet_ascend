@@ -1,0 +1,570 @@
+do nothing
+
+[Modelarts Service Log]user: uid=1101(work) gid=1101(work) groups=1101(work),1000(HwHiAiUser)
+
+[Modelarts Service Log]pwd: /home/work
+
+[Modelarts Service Log]app_url: s3://open-data/job/openilines2022042513t042513522019526/code/V0002/
+
+[Modelarts Service Log]boot_file: V0002/train.py
+
+[Modelarts Service Log]log_url: /tmp/log/openilines2022042513t042513522019526.log
+
+[Modelarts Service Log]command: V0002/train.py --data_url=s3://open-data/attachment/a/a/aad38740-b70b-4cf6-a9a2-4113dc4eba90aad38740-b70b-4cf6-a9a2-4113dc4eba90/ --train_url=s3://open-data/job/openilines2022042513t042513522019526/output/V0002/
+
+[Modelarts Service Log]local_code_dir: 
+
+[Modelarts Service Log]Training start at 2022-04-25-14:10:35
+
+[Modelarts Service Log][modelarts_create_log] modelarts-pipe found
+
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/openilines2022042513t042513522019526.log
+
+[Modelarts Service Log]handle inputs of training job
+
+INFO:root:Using MoXing-v2.0.0.rc2.4b57a67b-4b57a67b
+
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+
+[ModelArts Service Log][INFO][2022/04/25 14:10:36]: env MA_INPUTS is not found, skip the inputs handler
+
+INFO:root:Using MoXing-v2.0.0.rc2.4b57a67b-4b57a67b
+
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+
+[ModelArts Service Log]2022-04-25 14:10:36,887 - modelarts-downloader.py[line:550] - INFO: Main: modelarts-downloader starting with Namespace(dst='./', recursive=True, skip_creating_dir=False, src='s3://open-data/job/openilines2022042513t042513522019526/code/V0002/', trace=False, type='common', verbose=False)
+
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/openilines2022042513t042513522019526.log
+
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/openilines2022042513t042513522019526.log
+
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+
+/home/work/user-job-dir
+
+[ModelArts Service Log]modelarts-pipe: total length: 24
+
+[Modelarts Service Log][modelarts_logger] modelarts-pipe found
+
+[ModelArts Service Log]modelarts-pipe: will create log file /tmp/log/openilines2022042513t042513522019526.log
+
+[ModelArts Service Log]modelarts-pipe: will write log file /tmp/log/openilines2022042513t042513522019526.log
+
+[ModelArts Service Log]modelarts-pipe: param for max log length: 1073741824
+
+[ModelArts Service Log]modelarts-pipe: param for whether exit on overflow: 0
+
+INFO:root:Using MoXing-v2.0.0.rc2.4b57a67b-4b57a67b
+
+INFO:root:Using OBS-Python-SDK-3.20.9.1
+
+[Modelarts Service Log]2022-04-25 14:10:38,566 - INFO - background upload stdout log to s3://open-data/job/openilines2022042513t042513522019526/log/V0002/job12c464d2-job-openilines2022042513-0.log
+
+[Modelarts Service Log]2022-04-25 14:10:38,577 - INFO - Ascend Driver: Version=21.0.2
+
+[Modelarts Service Log]2022-04-25 14:10:38,578 - INFO - you are advised to use ASCEND_DEVICE_ID env instead of DEVICE_ID, as the DEVICE_ID env will be discarded in later versions
+
+[Modelarts Service Log]2022-04-25 14:10:38,578 - INFO - particularly, ${ASCEND_DEVICE_ID} == ${DEVICE_ID}, it's the logical device id
+
+[Modelarts Service Log]2022-04-25 14:10:38,578 - INFO - Davinci training command
+
+[Modelarts Service Log]2022-04-25 14:10:38,578 - INFO - ['/usr/bin/python', '/home/work/user-job-dir/V0002/train.py', '--data_url=s3://open-data/attachment/a/a/aad38740-b70b-4cf6-a9a2-4113dc4eba90aad38740-b70b-4cf6-a9a2-4113dc4eba90/', '--train_url=s3://open-data/job/openilines2022042513t042513522019526/output/V0002/']
+
+[Modelarts Service Log]2022-04-25 14:10:38,578 - INFO - Wait for Rank table file ready
+
+[Modelarts Service Log]2022-04-25 14:10:38,578 - INFO - Rank table file (K8S generated) is ready for read
+
+[Modelarts Service Log]2022-04-25 14:10:38,579 - INFO - 
+
+{
+
+    "status": "completed",
+
+    "group_count": "1",
+
+    "group_list": [
+
+        {
+
+            "group_name": "job-openilines2022042513",
+
+            "device_count": "1",
+
+            "instance_count": "1",
+
+            "instance_list": [
+                {
+
+                    "pod_name": "job12c464d2-job-openilines2022042513-0",
+
+                    "server_id": "192.168.25.113",
+
+                    "devices": [
+
+                        {
+
+                            "device_id": "1",
+
+                            "device_ip": "192.2.206.140"
+
+                        }
+
+                    ]
+
+                }
+
+            ]
+
+        }
+
+    ]
+
+}
+
+[Modelarts Service Log]2022-04-25 14:10:38,579 - INFO - Rank table file (C7x)
+
+[Modelarts Service Log]2022-04-25 14:10:38,579 - INFO - 
+
+{
+
+    "status": "completed",
+
+    "version": "1.0",
+
+    "server_count": "1",
+
+    "server_list": [
+
+        {
+
+            "server_id": "192.168.25.113",
+
+            "device": [
+
+                {
+
+                    "device_id": "1",
+
+                    "device_ip": "192.2.206.140",
+
+                    "rank_id": "0"
+
+                }
+
+            ]
+
+        }
+
+    ]
+
+}
+
+[Modelarts Service Log]2022-04-25 14:10:38,579 - INFO - Rank table file (C7x) is generated
+
+[Modelarts Service Log]2022-04-25 14:10:38,580 - INFO - Current server
+
+[Modelarts Service Log]2022-04-25 14:10:38,580 - INFO - 
+
+{
+
+    "server_id": "192.168.25.113",
+
+    "device": [
+
+        {
+
+            "device_id": "1",
+
+            "device_ip": "192.2.206.140",
+
+            "rank_id": "0"
+
+        }
+
+    ]
+
+}
+
+[Modelarts Service Log]2022-04-25 14:10:38,580 - INFO - bootstrap proc-rank-0-device-0
+
+INFO:root:Listing OBS: 1000
+
+INFO:root:pid: None.	1000/1137
+
+TripletLoss Created
+Model has been built
+
+INFO:numexpr.utils:Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+
+INFO:numexpr.utils:Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
+
+===init TripletFaceDataset===
+
+============== Starting Training ==============
+
+[WARNING] SESSION(296,fffe367fc160,python):2022-04-25-14:11:25.959.101 [mindspore/ccsrc/backend/session/ascend_session.cc:1806] SelectKernel] There are 480 node/nodes used reduce precision to selected the kernel!
+
+[ERROR] MD(296,fffe36ffd160,python):2022-04-25-14:13:04.303.238 [mindspore/ccsrc/minddata/dataset/util/task.cc:67] operator()] Task: GeneratorOp(ID:6) - thread(281467309511008) is terminated with err msg: Exception thrown from PyFunc. Exception: Generator worker process timeout.
+
+
+
+At:
+
+  /usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/dataset/engine/datasets.py(3841): process
+
+
+
+Line of code : 195
+
+File         : /home/jenkins/agent-working-dir/workspace/Compile_Ascend_ARM_CentOS@2/mindspore/mindspore/ccsrc/minddata/dataset/engine/datasetops/source/generator_op.cc
+
+
+
+[ERROR] MD(296,fffe36ffd160,python):2022-04-25-14:13:04.303.314 [mindspore/ccsrc/minddata/dataset/util/task_manager.cc:217] InterruptMaster] Task is terminated with err msg(more detail in info level log):Exception thrown from PyFunc. Exception: Generator worker process timeout.
+
+
+
+At:
+
+  /usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/dataset/engine/datasets.py(3841): process
+
+
+
+Line of code : 195
+
+File         : /home/jenkins/agent-working-dir/workspace/Compile_Ascend_ARM_CentOS@2/mindspore/mindspore/ccsrc/minddata/dataset/engine/datasetops/source/generator_op.cc
+
+
+
+epoch time: 136581.244 ms, per step time: 5463.250 ms
+
+epoch time: 4401.287 ms, per step time: 176.051 ms
+
+[EXCEPTION] GE(296,fffe367fc160,python):2022-04-25-14:13:49.387.212 [mindspore/ccsrc/runtime/device/ascend/ge_runtime/runtime_model.cc:233] Run] Call rt api rtStreamSynchronize failed, ret: 507901
+
+[WARNING] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.388.950 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:667] GetDumpPath] MS_OM_PATH is null, so dump to process local path, as ./rank_id/node_dump/...
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.389.039 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:684] DumpTaskExceptionInfo] Task fail infos task_id: 4294967295, stream_id: 4294967295, tid: 4294967295, device_id: 0, retcode: 507901 (Return error code unknown, ret code: 507901)
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.392.318 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:684] DumpTaskExceptionInfo] Task fail infos task_id: 4294967295, stream_id: 4294967295, tid: 4294967295, device_id: 0, retcode: 507901 (Return error code unknown, ret code: 507901)
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.393.628 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:684] DumpTaskExceptionInfo] Task fail infos task_id: 2, stream_id: 6, tid: 469, device_id: 0, retcode: 507011 ( model execute failed)
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.395.382 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:693] DumpTaskExceptionInfo] Dump node (Default/GetNext-op2750) task error input/output data to: ./rank_0/node_dump trace: 
+
+In file /usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/train/dataset_helper.py(78)/        outputs = self.get_next()/
+
+Corresponding forward node candidate:
+
+
+
+
+
+[EXCEPTION] SESSION(296,fffe367fc160,python):2022-04-25-14:13:49.421.903 [mindspore/ccsrc/backend/session/ascend_session.cc:1549] Execute] run task error!
+
+[ERROR] SESSION(296,fffe367fc160,python):2022-04-25-14:13:49.422.884 [mindspore/ccsrc/backend/session/ascend_session.cc:1967] ReportErrorMessage] Ascend error occurred, error message:
+
+EE3001: The process has lost connection between the host and device. This might be caused by execution timeout of particular operators or unstable connection. Check the error message detail and try again.
+
+        Aicpu kernel execute failed, device_id=0, stream_id=6, task_id=2, fault so_name=libaicpu_kernels.so, fault kernel_name=GetNext, fault op_name=, extend_info=[FUNC:ProcessDrvErr][FILE:stream.cc][LINE:679]
+
+        Stream synchronize failed, stream = 0xfffead4c1b40[FUNC:StreamSynchronize][FILE:logger.cc][LINE:285]
+
+
+
+Traceback (most recent call last):
+
+  File "/home/work/user-job-dir/V0002/train.py", line 186, in 
+
+    main()
+
+  File "/home/work/user-job-dir/V0002/train.py", line 182, in main
+
+    model.train(cfg.num_epochs, data_loader, callbacks=callbacks, dataset_sink_mode=True)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/train/model.py", line 726, in train
+
+    sink_size=sink_size)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/train/model.py", line 504, in _train
+
+    self._train_dataset_sink_process(epoch, train_dataset, list_callback, cb_params, sink_size)
+                {
+
+                    "pod_name": "job12c464d2-job-openilines2022042513-0",
+
+                    "server_id": "192.168.25.113",
+
+                    "devices": [
+
+                        {
+
+                            "device_id": "1",
+
+                            "device_ip": "192.2.206.140"
+
+                        }
+
+                    ]
+
+                }
+
+            ]
+
+        }
+
+    ]
+
+}
+
+[Modelarts Service Log]2022-04-25 14:10:38,579 - INFO - Rank table file (C7x)
+
+[Modelarts Service Log]2022-04-25 14:10:38,579 - INFO - 
+
+{
+
+    "status": "completed",
+
+    "version": "1.0",
+
+    "server_count": "1",
+
+    "server_list": [
+
+        {
+
+            "server_id": "192.168.25.113",
+
+            "device": [
+
+                {
+
+                    "device_id": "1",
+
+                    "device_ip": "192.2.206.140",
+
+                    "rank_id": "0"
+
+                }
+
+            ]
+
+        }
+
+    ]
+
+}
+
+[Modelarts Service Log]2022-04-25 14:10:38,579 - INFO - Rank table file (C7x) is generated
+
+[Modelarts Service Log]2022-04-25 14:10:38,580 - INFO - Current server
+
+[Modelarts Service Log]2022-04-25 14:10:38,580 - INFO - 
+
+{
+
+    "server_id": "192.168.25.113",
+
+    "device": [
+
+        {
+
+            "device_id": "1",
+
+            "device_ip": "192.2.206.140",
+
+            "rank_id": "0"
+
+        }
+
+    ]
+
+}
+
+[Modelarts Service Log]2022-04-25 14:10:38,580 - INFO - bootstrap proc-rank-0-device-0
+
+INFO:root:Listing OBS: 1000
+
+INFO:root:pid: None.	1000/1137
+
+TripletLoss Created
+Model has been built
+
+INFO:numexpr.utils:Note: detected 192 virtual cores but NumExpr set to maximum of 64, check "NUMEXPR_MAX_THREADS" environment variable.
+
+INFO:numexpr.utils:Note: NumExpr detected 192 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+
+INFO:numexpr.utils:NumExpr defaulting to 8 threads.
+
+===init TripletFaceDataset===
+
+============== Starting Training ==============
+
+[WARNING] SESSION(296,fffe367fc160,python):2022-04-25-14:11:25.959.101 [mindspore/ccsrc/backend/session/ascend_session.cc:1806] SelectKernel] There are 480 node/nodes used reduce precision to selected the kernel!
+
+[ERROR] MD(296,fffe36ffd160,python):2022-04-25-14:13:04.303.238 [mindspore/ccsrc/minddata/dataset/util/task.cc:67] operator()] Task: GeneratorOp(ID:6) - thread(281467309511008) is terminated with err msg: Exception thrown from PyFunc. Exception: Generator worker process timeout.
+
+
+
+At:
+
+  /usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/dataset/engine/datasets.py(3841): process
+
+
+
+Line of code : 195
+
+File         : /home/jenkins/agent-working-dir/workspace/Compile_Ascend_ARM_CentOS@2/mindspore/mindspore/ccsrc/minddata/dataset/engine/datasetops/source/generator_op.cc
+
+
+
+[ERROR] MD(296,fffe36ffd160,python):2022-04-25-14:13:04.303.314 [mindspore/ccsrc/minddata/dataset/util/task_manager.cc:217] InterruptMaster] Task is terminated with err msg(more detail in info level log):Exception thrown from PyFunc. Exception: Generator worker process timeout.
+
+
+
+At:
+
+  /usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/dataset/engine/datasets.py(3841): process
+
+
+
+Line of code : 195
+
+File         : /home/jenkins/agent-working-dir/workspace/Compile_Ascend_ARM_CentOS@2/mindspore/mindspore/ccsrc/minddata/dataset/engine/datasetops/source/generator_op.cc
+
+
+
+epoch time: 136581.244 ms, per step time: 5463.250 ms
+
+epoch time: 4401.287 ms, per step time: 176.051 ms
+
+[EXCEPTION] GE(296,fffe367fc160,python):2022-04-25-14:13:49.387.212 [mindspore/ccsrc/runtime/device/ascend/ge_runtime/runtime_model.cc:233] Run] Call rt api rtStreamSynchronize failed, ret: 507901
+
+[WARNING] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.388.950 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:667] GetDumpPath] MS_OM_PATH is null, so dump to process local path, as ./rank_id/node_dump/...
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.389.039 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:684] DumpTaskExceptionInfo] Task fail infos task_id: 4294967295, stream_id: 4294967295, tid: 4294967295, device_id: 0, retcode: 507901 (Return error code unknown, ret code: 507901)
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.392.318 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:684] DumpTaskExceptionInfo] Task fail infos task_id: 4294967295, stream_id: 4294967295, tid: 4294967295, device_id: 0, retcode: 507901 (Return error code unknown, ret code: 507901)
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.393.628 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:684] DumpTaskExceptionInfo] Task fail infos task_id: 2, stream_id: 6, tid: 469, device_id: 0, retcode: 507011 ( model execute failed)
+
+[ERROR] DEVICE(296,fffe367fc160,python):2022-04-25-14:13:49.395.382 [mindspore/ccsrc/runtime/device/ascend/ascend_kernel_runtime.cc:693] DumpTaskExceptionInfo] Dump node (Default/GetNext-op2750) task error input/output data to: ./rank_0/node_dump trace: 
+
+In file /usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/train/dataset_helper.py(78)/        outputs = self.get_next()/
+
+Corresponding forward node candidate:
+
+
+
+
+
+[EXCEPTION] SESSION(296,fffe367fc160,python):2022-04-25-14:13:49.421.903 [mindspore/ccsrc/backend/session/ascend_session.cc:1549] Execute] run task error!
+
+[ERROR] SESSION(296,fffe367fc160,python):2022-04-25-14:13:49.422.884 [mindspore/ccsrc/backend/session/ascend_session.cc:1967] ReportErrorMessage] Ascend error occurred, error message:
+
+EE3001: The process has lost connection between the host and device. This might be caused by execution timeout of particular operators or unstable connection. Check the error message detail and try again.
+
+        Aicpu kernel execute failed, device_id=0, stream_id=6, task_id=2, fault so_name=libaicpu_kernels.so, fault kernel_name=GetNext, fault op_name=, extend_info=[FUNC:ProcessDrvErr][FILE:stream.cc][LINE:679]
+
+        Stream synchronize failed, stream = 0xfffead4c1b40[FUNC:StreamSynchronize][FILE:logger.cc][LINE:285]
+
+
+
+Traceback (most recent call last):
+
+  File "/home/work/user-job-dir/V0002/train.py", line 186, in 
+
+    main()
+
+  File "/home/work/user-job-dir/V0002/train.py", line 182, in main
+
+    model.train(cfg.num_epochs, data_loader, callbacks=callbacks, dataset_sink_mode=True)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/train/model.py", line 726, in train
+
+    sink_size=sink_size)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/train/model.py", line 504, in _train
+
+    self._train_dataset_sink_process(epoch, train_dataset, list_callback, cb_params, sink_size)
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/train/model.py", line 566, in _train_dataset_sink_process
+
+    outputs = self._train_network(*inputs)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/nn/cell.py", line 404, in __call__
+
+    out = self.compile_and_run(*inputs)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/nn/cell.py", line 698, in compile_and_run
+
+    return _cell_graph_executor(self, *new_inputs, phase=self.phase)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/common/api.py", line 627, in __call__
+
+    return self.run(obj, *args, phase=phase)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/common/api.py", line 655, in run
+
+    return self._exec_pip(obj, *args, phase=phase_real)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/common/api.py", line 78, in wrapper
+
+    results = fn(*arg, **kwargs)
+
+  File "/usr/local/ma/python3.7/lib/python3.7/site-packages/mindspore/common/api.py", line 638, in _exec_pip
+
+    return self._graph_executor(args_list, phase)
+
+RuntimeError: mindspore/ccsrc/backend/session/ascend_session.cc:1549 Execute] run task error!
+
+
+
+# 
+
+[WARNING] MD(296,ffff96355a50,python):2022-04-25-14:13:49.430.390 [mindspore/ccsrc/minddata/dataset/engine/datasetops/device_queue_op.cc:74] ~DeviceQueueOp] preprocess_batch: 53; batch_queue: 0, 0, 1, 1, 0, 0, 0, 0, 0, 0; push_start_time: 2022-04-25-14:11:04.327.419, 2022-04-25-14:11:04.443.880, 2022-04-25-14:11:04.589.058, 2022-04-25-14:11:04.739.150, 2022-04-25-14:11:05.367.906, 2022-04-25-14:11:05.457.953, 2022-04-25-14:11:05.533.455, 2022-04-25-14:11:05.689.595, 2022-04-25-14:11:06.048.918, 2022-04-25-14:11:11.167.693; push_end_time: 2022-04-25-14:11:04.329.536, 2022-04-25-14:11:04.445.948, 2022-04-25-14:11:04.591.245, 2022-04-25-14:11:04.741.320, 2022-04-25-14:11:05.370.061, 2022-04-25-14:11:05.460.093, 2022-04-25-14:11:05.535.599, 2022-04-25-14:11:05.691.768, 2022-04-25-14:11:06.051.129, 2022-04-25-14:11:11.169.955.
+
+[Modelarts Service Log]2022-04-25 14:13:55,786 - ERROR - proc-rank-0-device-0 (pid: 296) has exited with non-zero code: 1
+
+[Modelarts Service Log]2022-04-25 14:13:55,786 - INFO - Begin destroy training processes
+
+[Modelarts Service Log]2022-04-25 14:13:55,786 - INFO - proc-rank-0-device-0 (pid: 296) has exited
+
+[Modelarts Service Log]2022-04-25 14:13:55,787 - INFO - End destroy training processes
+
+[Modelarts Service Log]2022-04-25 14:13:55,810 - INFO - final upload stdout log done
+
+[ModelArts Service Log]modelarts-pipe: total length: 10668
+
+[Modelarts Service Log]Training end with return code: 1
+
+[Modelarts Service Log]upload ascend-log to s3://open-data/job/openilines2022042513t042513522019526/log/V0002/ascend-log/ at 2022-04-25-14:13:55
+
+upload_tail_log.py -l 2048 -o s3://open-data/job/openilines2022042513t042513522019526/log/V0002/ascend-log/
+
+list /home/work/ascend/log
+
+device-0
+
+plog
+
+device-0/device-296_20220425141052767.log
+
+plog/plog-296_20220425141049028.log
+
+collect /home/work/ascend/log/plog: /home/work/ascend/log/plog/plog-296_20220425141049028.log
+
+collect /home/work/ascend/log/device-0: /home/work/ascend/log/device-0/device-296_20220425141052767.log
+
+totally, 2 ascend log files to be uploaded
+
+[Modelarts Service Log]upload ascend-log end at 2022-04-25-14:13:56
+
+[Modelarts Service Log]Training end at 2022-04-25-14:13:56
+
+[Modelarts Service Log]Training completed.
